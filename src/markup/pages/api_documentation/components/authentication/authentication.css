@@ -1,0 +1,47 @@
+p{
+    font-family: 'Varela round', sans-serif;
+    font-size: 15px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+*{
+    color: black;
+}
+
+
+.containerCopy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  margin: 1rem;
+}
+
+.code-snippet {
+  width: 100%;
+  border-radius: 10px;
+  background: #F0B90B;
+  padding: 0.1rem;
+}
+
+.code-section {
+  position: relative;
+  width: 100%;
+}
+
+.code-section pre {
+    color:black;
+  font-size: 100%;
+  background-color: #fff;
+}
+
+.code-section span {
+  position: absolute;
+  right: 0;
+  top: 5%;
+  bottom: 0;
+  font-size: 150%;
+}
