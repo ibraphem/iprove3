@@ -43,10 +43,11 @@
     hr{
         color: #F0B90B;
     }
+
     .footer{
         display: none;
     }
-
+   
     .readmore{
         padding: 20px;
     }

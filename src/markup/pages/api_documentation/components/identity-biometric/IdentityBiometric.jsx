@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Accordion } from 'react-bootstrap';
 import '../../layouts/generic.css';
 import './identity-biometric.css';
 // Layout

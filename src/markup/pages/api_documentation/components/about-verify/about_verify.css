@@ -25,6 +25,7 @@ h2{
 }
 
 .quoteTag{
+    background-color: #dee2e6;
     padding: 20px;
     margin: 10px;
     border-left: 5px solid #f3dc09 !important;
