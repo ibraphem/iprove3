@@ -131,7 +131,7 @@ class Welcome extends Component {
 														<a href="/api/authentication">&larr; Prev</a>
 													</li>
 													<li class="next">
-														<a href="/api/bvn">Next &rarr;</a>
+														<a href="/api/user_verify/id">Next &rarr;</a>
 													</li>
 												</ul>
 											</div>

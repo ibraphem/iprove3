@@ -207,10 +207,10 @@ const codeString =
 										<div>
 												<ul class="pager">
 													<li class="previous">
-													<a href="css-float">&larr; Prev</a>
+													<a href="/api/user_verify/id">&larr; Prev</a>
 													</li>
 													<li class="next">
-													<a href="styling-link-into-nice-button">Next &rarr;</a>
+													<a href="/api/user_verify/fingerprint/">Next &rarr;</a>
 													</li>
 												</ul>
 											</div>

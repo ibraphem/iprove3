@@ -231,3 +231,70 @@ export const data6 = [
       
       },
 ];
+
+	  //const { Panel } = Collapse;
+    export  const codeString_header = `
+    secret-key =  {secretKey}"
+    org-id ={organizationId} 
+  `
+  export const error404 = `
+  {
+      "code":"NOT_FOUND_ERROR",
+      "message":"BVN provided is not found. Please provide a valid bvn"
+  }
+  `
+  export const requestBody = `
+  {
+      "firstname":"KUDIRAT",
+      "middlename":"OMOWUNMI",
+      "surname":"AZEEZ",
+      "birthdate":"26-05-1994",
+      "phonenumber":"08127763271"
+  }
+  `
+  
+  export const codeString = 
+  ` 
+  {
+    "message": "Request Successful",
+    "success": true,
+    "payload": {
+        "matches": {
+            "status": true,
+            "percentage": "100%",
+            "firstname": true,
+            "surname": true,
+            "middlename": true,
+            "birthdate": true
+        },
+        "title": "miss",
+        "firstname": "KUDIRAT",
+        "surname": "AZEEZ",
+        "middlename": "OMOWUNMI",
+        "birthcountry": "****",
+        "birthdate": "26-05-1994",
+        "birthlga": "****",
+        "birthstate": "****",
+        "gender": "f",
+        "nin": "23521253866",
+        "telephoneno": "08127763271",
+        "religion": null,
+        "photo":"Base64 Encoded",
+        "signature":"Base64 Encoded",
+      }
+    }
+  `
+  
+  
+export const curlRequest = 
+`curl --location --request POST 'ttps://testapi.iprove.ng/identity/api/v1/nin/details/get_by_id/{NIN}' 
+--header 'Authorization: Bearer <your secret key>' 
+--header 'Content-Type: application/json' 
+--data-raw '{
+    "firstname":"KUDIRAT",
+    "lastname":"OMOWUNMI",
+    "surname":"AZEEZ",
+    "phonenumber":"08127763271",
+    "birthdate":"26-05-1994"
+}'`;
+      
