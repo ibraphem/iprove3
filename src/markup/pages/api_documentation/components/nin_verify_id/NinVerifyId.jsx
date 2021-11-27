@@ -2,63 +2,35 @@ import React, {useState} from 'react';
 // import { Collapse,Table,Button} from 'antd';
 import Accordion from 'react-bootstrap/Accordion'
 import Row from 'react-bootstrap/Row'
+import {
+    Circle
+} from 'draw-shape-reactjs';
 import { MdContentCopy } from "react-icons/md";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Col from 'react-bootstrap/Col';
+import Tab from 'react-bootstrap/Tab'
+import Tabs from 'react-bootstrap/Tabs'
+//import Prism from "prismjs";
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
 //import { darcula, solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 //import prism from 'react-syntax-highlighter/dist/esm/styles/prism/prism';
 import '../../layouts/generic.css';
 import './nin_verify_id.css';
+import '../../layouts/prism.css';
 // Layout
 import ApiHeader from "../../layouts/ApiHeader";
 import ApiSide from "../../layouts/ApiSide";
 //import ResponseComponent from "./ninResponse";
-import { columns1, columns2,columns3,columns4, columns5,columns6,columns7,columns8 } from './jsondata';
+import { columns1, columns2,columns3,columns4, 
+	columns5,columns6,columns7,columns8,
+	codeString, error404, requestBody, codeString_header,curlRequest
+ } from './jsondata';
 import { Container } from 'react-bootstrap';
-//import { StyledAboutPage } from '../../../../../styles/AboutPage.style';
-
 SyntaxHighlighter.registerLanguage('jsx', jsx);
 
 const NinVerifyId = () => {
 
-	
-	  //const { Panel } = Collapse;
-const codeString_header = `
-	secret-key =  {secretKey}"
-	org-id ={organizationId} 
-`
-
-const requestBody = `
-{
-    "firstname":"KUDIRAT",
-    "middlename":"OMOWUNMI",
-    "surname":"AZEEZ",
-    "birthdate":"26-05-1994",
-    "phonenumber":"08127763271"
-}
-`
-const codeString = 
-`{
-    "message": "Request Successful",
-    "success": true,
-    "payload": {
-        "title": "miss",
-        "firstname": "KUDIRAT",
-        "surname": "AZEEZ",
-        "middlename": "OMOWUNMI",
-        "birthcountry": "****",
-        "birthdate": "26-05-1994",
-        "birthlga": "****",
-        "birthstate": "****",
-        "gender": "f",
-        "nin": "23521253866",
-        "telephoneno": "08127763271",
-        "religion": null,
-        "photo": "Base64 Encoded"
-`;
-		
 	  const [isCopied, setIsCopied] = useState(false);
 
 	  const onCopyText = () => {
@@ -87,22 +59,12 @@ const codeString =
 										<img src={servicesPic1} className="rounded" alt="" /> */}
 									</div>
 									<div className="clearfix">
-										<div className="mb-30 quoteTag">
-
-											<p className="mb-0">
-											Please note that when using your test key, Our test 
-											personel is <b>John Doe</b> and his Bank Verification Number as 
-											<b>10000000001</b>. Hence all matching done with your test keys
-											 with details other than that of our Test Persona would 
-											 simulate a failed identity matching. 
-											</p>
-										</div>
 										<div className="mb-30 collapsed">
 										<Accordion defaultActiveKey="0">
 											<Accordion.Item eventKey="0">
-												<h5>Verify User NIN Details by ID</h5>
+												<h5 style={{padding:"5px",margin:"5px"}}>Verify User NIN Details by ID</h5>
 												<Accordion.Header>
-												<input type="button" value="GET" size="sm" className="myButton" variant="primary"></input>
+												<input type="button" value="POST" size="sm" className="myButton" variant="primary"></input>
 												&nbsp;&nbsp;&nbsp;&nbsp; <strong><small>{`https://testapi.iprove.ng/identity/api/v1/nin/details/get_by_id/{NIN}`}</small></strong>
 												</Accordion.Header>
 												<Accordion.Body>
@@ -138,22 +100,6 @@ const codeString =
 														<Col sm><p className="paramsHeading">Request Header</p></Col>
 													</Row>
 
-													<Row>
-														<Col sm>
-														<div class="mb-30 panel-body">
-															<SyntaxHighlighter language="javascript"  showLineNumbers={true}>
-																{codeString_header}
-																<CopyToClipboard text={codeString_header} onCopy={onCopyText}>
-																<span>{isCopied ? "Copied!" : <MdContentCopy />}</span>
-															</CopyToClipboard>																	
-															</SyntaxHighlighter>
-															<CopyToClipboard text={codeString_header} onCopy={onCopyText}>
-																<span>{isCopied ? "Copied!" : <MdContentCopy />}</span>
-															</CopyToClipboard>
-														</div>
-														</Col>
-														
-													</Row>	
 													<br/>	
 													<Row>
 														<Col sm><p className="paramsHeading">Body</p></Col>
@@ -184,37 +130,18 @@ const codeString =
 															<Col sm><p>{columns8[2].title}</p></Col>
 														</Row>
 														<br/><br/>
-														<Row>
-														<Col sm><p className="paramsHeading">Sample Request Body(JSON)</p></Col>
-													</Row>
-
-													<Row>
-														<Col sm>
-														<div class="mb-30 panel-body">
-															<SyntaxHighlighter language="javascript"  showLineNumbers={true}>
-																{requestBody}
-																<CopyToClipboard text={requestBody} onCopy={onCopyText}>
-																<span>{isCopied ? "Copied!" : <MdContentCopy />}</span>
-															</CopyToClipboard>																	
-															</SyntaxHighlighter>
-															<CopyToClipboard text={codeString_header} onCopy={onCopyText}>
-																<span>{isCopied ? "Copied!" : <MdContentCopy />}</span>
-															</CopyToClipboard>
-														</div>
-														</Col>
-														
-													</Row>	
+													
 													<Row>
 														<Col sm ><p className="params">Responses</p></Col>
 													</Row>
 													<br/>
 												
-														<Accordion defaultActiveKey="0">
+														<Accordion>
 															<Accordion.Item eventKey="0">
 																<Accordion.Header>
 																	<Row>
-																		<Col sm><p className="paramsb"><span className="circle"></span>
-																				&nbsp;&nbsp;200 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For premium payload type</p>
+																		<Col sm><p className="paramsb"><span className="circle"><Circle center={[15, 25]} radius={3} color='green' /></span>
+																				&nbsp;&nbsp;200 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="paramsHeading">Request Successful</span></p>
 																		</Col>
 																	</Row>
 																
@@ -222,9 +149,11 @@ const codeString =
 																<Accordion.Body>
 																<Row><Col>
 																<div class="mb-30 panel-body">
-																<SyntaxHighlighter language="javascript" showLineNumbers={true}>
-																	{codeString}																															
-																</SyntaxHighlighter>
+																<pre class="line-numbers">
+																	<code className="language-javascript">
+																	{codeString}												
+																	</code>		
+																</pre>
 																<CopyToClipboard text={codeString} onCopy={onCopyText}>
 																		<span>{isCopied ? "Copied!" : <MdContentCopy />}</span>
 																</CopyToClipboard>
@@ -232,24 +161,86 @@ const codeString =
 																</Col></Row>
 																</Accordion.Body>
 															</Accordion.Item>
+															
+														</Accordion>												
+														<Accordion>
+															<Accordion.Item eventKey="0">
+																<Accordion.Header>
+																	<Row>
+																		<Col sm><p className="paramsb"><span className="circle"><Circle center={[15, 25]} radius={3} color='red' /></span>
+																				&nbsp;&nbsp;404 	</p>
+																		</Col>
+																	</Row>
+																
+																</Accordion.Header>
+																<Accordion.Body>
+																<Row><Col>
+																<div class="mb-30 panel-body">
+																<pre className="line-numbers">
+																	<code className="language-javascript">
+																	{error404}												
+																	</code>		
+																</pre>
+																<CopyToClipboard text={codeString} onCopy={onCopyText}>
+																		<span>{isCopied ? "Copied!" : <MdContentCopy />}</span>
+																</CopyToClipboard>
+																</div>	
+																</Col></Row>
+																</Accordion.Body>
+															</Accordion.Item>
+															
 														</Accordion>
 												</Container>
 												</Accordion.Body>
 											</Accordion.Item>
-											{/* <Accordion.Item eventKey="1">
-												<Accordion.Header>Accordion Item #2</Accordion.Header>
-												<Accordion.Body>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-												veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-												commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-												velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-												cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-												est laborum.
-												</Accordion.Body>
-											</Accordion.Item> */}
-											</Accordion>
 											
+											</Accordion>
+										</div>
+										<div className="mb-30">
+											<Row>
+												<Col sm><p className="params">Sample Request</p></Col>
+											</Row>
+											<Row>
+												<Tabs defaultActiveKey="json" id="uncontrolled-tab-example" className="mb-3">
+													<Tab eventKey="json" title="JSON">
+													<Col sm>
+												<div class="mb-30 panel-body">
+													<pre class="line-numbers">
+														<code className="language-javascript">
+															{requestBody}
+														</code>
+													</pre>
+														
+													<CopyToClipboard text={codeString_header} onCopy={onCopyText}>
+														<span>{isCopied ? "Copied!" : <MdContentCopy />}</span>
+													</CopyToClipboard>
+												</div>
+													</Col>
+													</Tab>
+													<Tab eventKey="curl" title="CURL">
+													<Col sm>
+														<div class="mb-30 panel-body">
+																<pre className="line-numbers">
+																	<code className="language-javascript">
+																		{curlRequest}												
+																	</code>		
+																</pre>
+																<CopyToClipboard text={codeString_header} onCopy={onCopyText}>
+																	<span>{isCopied ? "Copied!" : <MdContentCopy />}</span>
+																</CopyToClipboard>																	
+														</div>
+													</Col>
+													</Tab>
+													
+												</Tabs>
+												
+											</Row>	
+											<Row>
+												<Col>
+												
+													
+												</Col>
+											</Row>		
 										</div>
 									</div>
 									<div className="mb-30">

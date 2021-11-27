@@ -69,6 +69,14 @@ h2{
 }
 
 
-.panel-body{
-    display: flex;
+div.panel-body > pre{
+    width: 100%;
+}
+
+.circle{
+    height: 18px;
+    width: 18px;
+    color: green;
+    border-radius: 50px;
+    background-color: green;
 }

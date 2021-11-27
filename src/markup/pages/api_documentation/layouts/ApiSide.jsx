@@ -29,11 +29,11 @@ function ApiSide(props) {
                         <li key={4} onClick={()=>toggleActiveLink(4)}><Link to="/api/authentication"><span>Authentication</span><i className="fa fa-angle-right"></i></Link></li>
                         <li key={5} onClick={()=>toggleActiveLink(5)}><Link to="/api/about-verification"><span>About Verifications</span><i className="fa fa-angle-right"></i></Link></li>
                         <br />
-                        <h6>NATIONAL ID CARD CHECKS</h6>
+                        {/* <h6>NATIONAL ID CARD CHECKS</h6>
                         <li key={6} onClick={()=>toggleActiveLink(6)}><Link to="/api/user_check/id"><span>Check NIN By ID</span><i className="fa fa-angle-right"></i></Link></li>
                         <li><Link to="/api/user_check/phone"><span>Check NIN By Phone No</span><i className="fa fa-angle-right"></i></Link></li>
                         <li><Link to="/api/user_check/fingerprint"><span>Check  Nin by Fingerprint</span><i className="fa fa-angle-right"></i></Link></li>
-                        <br />
+                        <br /> */}
                         <h6>NATIONAL ID VERIFICATION</h6>
                         <li><Link to="/api/user_verify/id"><span>Verify NIN By ID</span><i className="fa fa-angle-right"></i></Link></li>
                         <li><Link to="/api/user_verify/phone"><span>Verify NIN By Phone No</span><i className="fa fa-angle-right"></i></Link></li>
