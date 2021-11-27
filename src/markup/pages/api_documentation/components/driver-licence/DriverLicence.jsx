@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Accordion } from 'react-bootstrap';
+
 import '../../layouts/generic.css';
 import './driver_licence.css';
 // Layout

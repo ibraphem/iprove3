@@ -33,7 +33,12 @@ import Cac from './pages/api_documentation/components/cac/Cac';
 import DriverLicence from './pages/api_documentation/components/driver-licence/DriverLicence';
 import IdentityBiometric from './pages/api_documentation/components/identity-biometric/IdentityBiometric';
 import IdentityMatching from './pages/api_documentation/components/identity-matching/IdentityMatching';
-
+import NinCheckId from './pages/api_documentation/components/nin_check_id/NinCheckId';
+import NinPhoneId from './pages/api_documentation/components/nin_check_phone/NinPhoneId';
+import NinFingerPrintId from './pages/api_documentation/components/nin_check_fingerprint/NinFingerPrintId';
+import NinVerifyId from './pages/api_documentation/components/nin_verify_id/NinVerifyId';
+import NinVerifyPhone from './pages/api_documentation/components/nin_verify_phone/NinVerifyPhone';
+import NinVerifyFingerprint from './pages/api_documentation/components/nin_verify_fingerprint/NinVerifyFingerprint';
 class Markup extends Component {
 	render() {
 		return (
@@ -53,6 +58,12 @@ class Markup extends Component {
 						<Route path='/api/authentication' exact component={Authentication} />
 						<Route path='/api/about-verification' exact component={AboutVerify} />
 						<Route path='/api/bvn' exact component={Bvn} />
+						<Route path='/api/user_check/id' exact component={NinCheckId} />
+						<Route path='/api/user_check/phone' exact component={NinPhoneId} />
+						<Route path='/api/user_check/fingerprint' exact component={NinFingerPrintId} />
+						<Route path='/api/user_verify/id' exact component={NinVerifyId} />
+						<Route path='/api/user_verify/phone' exact component={NinVerifyPhone} />
+						<Route path='/api/user_verify/fingerprint' exact component={NinVerifyFingerprint} />
 						<Route path='/api/tin' exact component={Tin} />
 						<Route path='/api/cac' exact component={Cac} />
 						<Route path='/api/driver-licence' exact component={DriverLicence} />

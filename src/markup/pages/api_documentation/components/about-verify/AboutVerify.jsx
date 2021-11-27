@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Accordion } from 'react-bootstrap';
 import '../../layouts/generic.css';
 import './about_verify.css';
 // Layout
 import ApiHeader from "../../layouts/ApiHeader";
 import ApiSide from "../../layouts/ApiSide";
 // Import Images
-import servicesPic1 from "../../../../../images/services/welcome_api.jpg";
+
 
 class Welcome extends Component {
 

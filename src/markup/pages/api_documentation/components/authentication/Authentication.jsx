@@ -1,7 +1,6 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { MdContentCopy } from "react-icons/md";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { Accordion } from 'react-bootstrap';
 import '../../layouts/generic.css';
 import './authentication.css';
 // Layout
@@ -12,7 +11,7 @@ import servicesPic1 from "../../../../../images/services/iprove_auth.png";
 
 const Authentication = () => {
 
-	const [text, setText] = useState("");
+	
 	const [isCopied, setIsCopied] = useState(false);
 
 	const onCopyText = () => {

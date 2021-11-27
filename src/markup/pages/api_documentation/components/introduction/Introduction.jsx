@@ -1,6 +1,4 @@
-import React, { Component, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Accordion } from 'react-bootstrap';
+import React, { useState } from 'react';
 import { MdContentCopy } from "react-icons/md";
 import '../../layouts/generic.css';
 import './introduction.css';
@@ -13,7 +11,7 @@ import ApiSide from "../../layouts/ApiSide";
 
 const Welcome = () => {
 
-	const [text, setText] = useState("");
+	//const [text, setText] = useState("");
 	const [isCopied, setIsCopied] = useState(false);
 
 	const onCopyText = () => {
