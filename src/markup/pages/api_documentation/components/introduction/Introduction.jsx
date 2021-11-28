@@ -22,11 +22,11 @@ const Welcome = () => {
 	};
 
 	const codeSnippet = `
-  1|  https://vapi.verifyme.ng
+  1|  https://testapi.iprove.ng/
   `;
 
 	const codeSnippet2 = `
-  	https://vapi.verifyme.ng
+	https://testapi.iprove.ng/
   `;
 	return (
 		<>
@@ -50,7 +50,7 @@ const Welcome = () => {
 									<div className="head-text mb-30">
 
 										<p className="mb-0">
-											The VerifyMe REST API is a very important part of the  VerifyMe platform.
+											The iProve REST API is a very important part of the  VerifyMe platform.
 											The API is built using RESTful endpoints and standard HTTP verbs and uses standard HTTP response codes
 											to indicate the success or failure of an API request.
 										</p>
