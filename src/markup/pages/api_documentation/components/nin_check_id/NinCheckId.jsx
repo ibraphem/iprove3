@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row'
 import { MdContentCopy } from "react-icons/md";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Col from 'react-bootstrap/Col';
-
+import '../../layouts/prism.css';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
 //import { darcula, solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -131,13 +131,12 @@ const codeString =
 
 													<Row>
 														<Col sm>
-														<div class="mb-30 panel-body">
-															<SyntaxHighlighter language="javascript"  showLineNumbers={true}>
-																{codeString_header}
-																<CopyToClipboard text={codeString_header} onCopy={onCopyText}>
-																<span>{isCopied ? "Copied!" : <MdContentCopy />}</span>
-															</CopyToClipboard>																	
-															</SyntaxHighlighter>
+														<div class="mb-30 panel-body">															
+															<pre class="line-numbers">
+																<code className="language-javascript">
+																	{codeString_header}										
+																</code>		
+															</pre>	
 															<CopyToClipboard text={codeString_header} onCopy={onCopyText}>
 																<span>{isCopied ? "Copied!" : <MdContentCopy />}</span>
 															</CopyToClipboard>
@@ -174,9 +173,11 @@ const codeString =
 																<Accordion.Body>
 																<Row><Col>
 																<div class="mb-30 panel-body">
-																<SyntaxHighlighter language="javascript" showLineNumbers={true}>
-																	{codeString}																															
-																</SyntaxHighlighter>
+																<pre className="line-numbers">
+																		<code className="language-javascript">
+																			{codeString}												
+																		</code>		
+																	</pre>
 																<CopyToClipboard text={codeString} onCopy={onCopyText}>
 																		<span>{isCopied ? "Copied!" : <MdContentCopy />}</span>
 																</CopyToClipboard>
