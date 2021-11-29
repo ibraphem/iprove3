@@ -10,12 +10,13 @@ import { useStateValue } from '../../StateProvider';
 // Import Images
 import bnrImg1 from "../../images/banner/img1.jpg";
 import bg2 from "../../images/main-banner/bg2.jpg"
+import Header from '../layout/header';
 
 const AboutUs = () => {
 	const [{ nightMode }] = useStateValue();
 	return (
 		<>
-				
+				<Header/>	
 		<div className="page-content bg-white">
 			
 			<div className="banner-wraper">

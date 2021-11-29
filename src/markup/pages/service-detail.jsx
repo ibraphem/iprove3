@@ -12,10 +12,13 @@ import doc from "../../images/icon/doc.png";
 import bg2 from "../../images/main-banner/bg2.jpg"
 import { StyledAboutSection } from '../../styles/AboutSection.styled';
 import { useStateValue } from '../../StateProvider';
+import Header from '../layout/header';
 
 const ServiceDetail = () => {
 	const [{ nightMode }] = useStateValue();
 	return (
+		<>
+		<Header/>
 		<div className="page-content bg-white">
 
 		<div className="banner-wraper">
@@ -183,6 +186,7 @@ const ServiceDetail = () => {
 		</StyledAboutSection>
 
 	</div>
+	</>
 	);
 };
 

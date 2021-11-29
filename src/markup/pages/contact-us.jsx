@@ -12,11 +12,13 @@ import animate2 from "../../images/shap/circle-dots.png";
 import animateRotate from "../../images/shap/plus-blue.png";
 import bg2 from "../../images/main-banner/bg2.jpg"
 import { StyledAboutSection } from '../../styles/AboutSection.styled';
+import Header from '../layout/header';
 
 const ContactUs = () => {
 	const [{ nightMode }] = useStateValue();
 	return (
-		<>				
+		<>			
+		<Header/>	
 		<div className="page-content bg-white">
 			
 			<div className="banner-wraper">

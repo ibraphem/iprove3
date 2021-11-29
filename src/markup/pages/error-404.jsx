@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 // Layout
-import Header from "../layout/header2";
+import Header from "../layout/header";
 import Footer from "../layout/footer";
 
 // Import Images
@@ -17,8 +17,8 @@ class Error extends Component{
 		return (
 			<>
 				
-				<Header />
-				
+	
+				<Header/>
 				<div className="page-content bg-white">
 					
 					<div className="banner-wraper">
@@ -57,7 +57,7 @@ class Error extends Component{
 					
 				</div>
 				
-				<Footer />
+
 				
 			</>
 		);

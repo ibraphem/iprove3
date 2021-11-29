@@ -17,6 +17,7 @@ import bnrImg1 from "../../images/banner/img1.jpg";
 import bg2 from "../../images/main-banner/bg2.jpg"
 import { StyledAboutSection } from '../../styles/AboutSection.styled';
 import ServiceBreak from '../elements/service-break';
+import Header from '../layout/header';
 
 const data = {
     'kyc': {
@@ -45,7 +46,7 @@ const Services = () => {
 	let { service } = params;
 	return (
 		<>
-				
+				<Header/>
 		<div className="page-content bg-white">
 			
 			<div className="banner-wraper">

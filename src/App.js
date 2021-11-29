@@ -28,10 +28,10 @@ function App() {
       themebg: nightMode ? "#101010" : "#fff",
       innerbg: nightMode ? "#000" : "#fff",
       secondary: "#F0B90B",
-      textColor: nightMode ? "#f2f2f2" : "#101010",
+      textColor: nightMode ? "#fff" : "#000",
       mbbg: nightMode ? bg2 : bg1,
       abtPg: nightMode ? bg2 : bnrImg1,
-      footer: nightMode ? bg2 : footerBg,
+      footer: bg2,
     },
     mobile: "768px",
   };

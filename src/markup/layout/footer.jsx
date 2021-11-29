@@ -17,13 +17,14 @@ import linkedin from '../../images/social/linkedin.png';
 
 import { StyledFooter } from '../../styles/FooterStyle';
 import iprove from '../../images/iprove.png';
+import bg2 from "../../images/main-banner/bg2.jpg"
 
-class aboutSection extends Component{
+class Footer extends Component{
 	render(){
 		return(
 			<>
 				
-				<StyledFooter className="footer">
+				<StyledFooter className="footer" style={{backgroundImage: "url("+bg2+")"}}>
 					<div className="footer-top">
 						<div className="container">
 							<div className="row">
@@ -59,8 +60,8 @@ class aboutSection extends Component{
 										<h3 className="footer-title">Our Service</h3>
 										<ul>
 											<li><Link to="/services/kyc"><span>KYC</span></Link></li>
-											<li><Link to="/services/kyc"><span> Identity Verification</span></Link></li>
-											<li><Link to="/services/kyc"><span>Address Verification</span></Link></li>
+											<li><Link to="/services/identity"><span> Identity Verification</span></Link></li>
+											<li><Link to="/services/address"><span>Address Verification</span></Link></li>
 										</ul>
 									</div>
 								</div>
@@ -101,4 +102,4 @@ class aboutSection extends Component{
 	}
 }
 
-export default aboutSection;
+export default Footer;

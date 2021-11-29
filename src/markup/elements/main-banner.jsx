@@ -20,7 +20,7 @@ class aboutSection extends Component{
 					<div className="container inner-content">
 						<div className="row align-items-center">
 							<div className="col-lg-7 col-md-6 col-sm-7">
-								<h6 className="title-ext text-primary">Welcome to IPROVE</h6>
+								<h6 className="title-ext text-primary">Welcome to iPROVE</h6>
 								<h1>We Verify and Proove beyond every possible doubt.</h1>
 								<Link to="/about-us" className="btn btn-secondary btn-lg shadow">Learn More</Link>
 							</div>
