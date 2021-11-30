@@ -5,7 +5,7 @@ import Sticky from 'react-stickynode';
 // Images
 
 import iprove from '../../images/iprove.png';
-import { StyledHeader, StyledHeader1, StyledHeader2 } from '../../styles/Header.styled';
+import { StyledHeader, } from '../../styles/Header.styled';
 import { useStateValue } from '../../StateProvider';
 
 
@@ -72,7 +72,7 @@ const Header = () => {
 						</button>
 						<div className="secondary-menu">
 							<ul>
-								<li className="btn-area"><button onClick={changeMode} className="btn  shadow">{nightMode ? "Light Mode" : "Dark Mode"} <i className="btn-icon-bx fas fa-chevron-right" style={{color:"#F0B90B"}}></i></button></li>
+								<li className="btn-area"><button onClick={changeMode} className="btn  shadow">{nightMode ? "Light" : "Dark"} <i className="btn-icon-bx fas fa-chevron-right" style={{color:"#F0B90B"}}></i></button></li>
 							</ul>
 						</div>
 						<div className="menu-links navbar-collapse collapse justify-content-end" id="menuDropdown">

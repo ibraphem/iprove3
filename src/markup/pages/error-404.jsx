@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 // Layout
 import Header from "../layout/header";
-import Footer from "../layout/footer";
+
 
 // Import Images
 import bnrImg1 from "../../images/banner/img1.jpg";

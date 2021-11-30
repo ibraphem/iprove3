@@ -51,7 +51,7 @@ class ServicesSliderSection extends Component{
 							<div className="heading-bx">
 								<h6 className="title-ext text-secondary">How We Do IT</h6>
 								<h2 className="title">We exist to reinforce integrity</h2>
-								<p>Our platform uses the authoritative data sources to validate identities - Nigerian Identity Management Commission (NIMC), Federal Road 
+								<p>Our solution levearages on authoritative data sources to proove and validate identities - Nigerian Identity Management Commission (NIMC), Federal Road 
 									Safety Commission (FRSC), Independent National Electoral Commission and the National Immigration office.</p>
 							</div>
 							<Link to="/about-us" className="btn btn-secondary btn-lg shadow">Abou Us</Link>
@@ -64,7 +64,7 @@ class ServicesSliderSection extends Component{
 							
 										<div className="icon-content">
 											<h4 className="ttr-title">Intl. Passport</h4>
-											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
+											<p>We consolidate identity by making use of regulated data from the Nigeria Immigration office.</p>
 										</div>
 									</StyledServiceWrapper> 
 								</div>
@@ -74,7 +74,7 @@ class ServicesSliderSection extends Component{
 							
 										<div className="icon-content">
 											<h4 className="ttr-title">Nat. Identity</h4>
-											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
+											<p>National Identification Number is a robust resource to ensure data integrity</p>
 										</div>
 									</StyledServiceWrapper> 
 								</div>
@@ -84,7 +84,7 @@ class ServicesSliderSection extends Component{
 							
 										<div className="icon-content">
 											<h4 className="ttr-title">Voters Identity</h4>
-											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
+											<p>Our platform can validate your data against those of the National Electoral Commission .</p>
 										</div>
 									</StyledServiceWrapper> 
 								</div>
@@ -94,7 +94,7 @@ class ServicesSliderSection extends Component{
 							
 										<div className="icon-content">
 											<h4 className="ttr-title">Driver License</h4>
-											<p>Phasellus venenatis porta rhoncus. Integer et viverra felis.</p>
+											<p>Our services provides  a truth proof means of  validating identit.y through Driver License data.</p>
 										</div>
 									</StyledServiceWrapper> 
 								</div>

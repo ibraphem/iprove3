@@ -37,49 +37,49 @@ class aboutSection extends Component{
 										<h5 style={{fontSize: "19px"}} className="title text-secondary mb-10">Employee Verification</h5>
 										<p>Identify the people you work with  just to be sure they are who they say they are. From address/location verification to guarantor verification, we got you covered.</p>
 									</div>
-									<Link to="/services/kyc" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
+									<Link to="/services/employee" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
 								</StyledHomeCard>
 							</div>
 							<div className="col-lg-4 col-sm-6 mb-30">
 								<StyledHomeCard className="work-bx">
 									<div className="work-num-bx">03</div>
 									<div className="work-content">
-										<h5 className="title text-secondary mb-10">Address Verification</h5>
-										<p>Beyond physical documentation, uniquely identify address and locations of your people of interest. From loan to bonding, our data gives you an extra layer of reliability.</p>
+										<h5 className="title text-secondary mb-10">KYC</h5>
+										<p>Know the customers you serve. Interact with the data that are persistent with their identity and become fraud proof.</p>
 									</div>
-									<Link to="/services/address" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
+									<Link to="/services/kyc" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
 								</StyledHomeCard>
 							</div>
 						</div>
 						<div className="row justify-content-center">
 							<div className="col-lg-4 col-sm-6 mb-30">
 								<StyledHomeCard className="work-bx">
-									<div className="work-num-bx">01</div>
+									<div className="work-num-bx">04</div>
 									<div className="work-content">
 										<h5 className="title text-secondary mb-10">Property Verification</h5>
-										<p>Instantly verify international passports, Driver’s license, NIN etc. against our authorized government verified data banks for proper identification with certainty. </p>
+										<p>Take calculated risk on propertt management by making sure you are certain about every bit piece of any property of your concern </p>
 									</div>
 									<Link to="/services/identity" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
 								</StyledHomeCard>
 							</div>
 							<div className="col-lg-4 col-sm-6 mb-30">
 								<StyledHomeCard className="work-bx">
-									<div className="work-num-bx">02</div>
+									<div className="work-num-bx">05</div>
 									<div className="work-content">
 										<h5 style={{fontSize: "19px"}} className="title text-secondary mb-10">Guarantor Verification</h5>
-										<p>Identify the people you work with  just to be sure they are who they say they are. From address/location verification to guarantor verification, we got you covered.</p>
+										<p>When you make a decision to engage people on the integrity and reference of others. Be certain that the guarantors are who they are reported to be.</p>
 									</div>
-									<Link to="/services/kyc" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
+									<Link to="/services/guarantor" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
 								</StyledHomeCard>
 							</div>
 							<div className="col-lg-4 col-sm-6 mb-30">
 								<StyledHomeCard className="work-bx">
-									<div className="work-num-bx">03</div>
+									<div className="work-num-bx">06</div>
 									<div className="work-content">
 										<h5 className="title text-secondary mb-10">Business Verification</h5>
-										<p>Beyond physical documentation, uniquely identify address and locations of your people of interest. From loan to bonding, our data gives you an extra layer of reliability.</p>
+										<p>Add credibility to your findings by engaging our business verification services to be truth proof of any ventures of your interest. </p>
 									</div>
-									<Link to="/services/address" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
+									<Link to="/services/business" className="btn btn-primary light">View More <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
 								</StyledHomeCard>
 							</div>
 						</div>

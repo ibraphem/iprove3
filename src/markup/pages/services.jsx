@@ -6,8 +6,11 @@ import { useParams } from "react-router-dom";
 
 // Import Images
 import kyc from "../../images/services/kyc.jpg"
-import address from "../../images/services/address.jpg"
 import identity from "../../images/services/identity.jpg"
+import employee from "../../images/services/employee.jpg"
+import business from "../../images/services/business.jpg"
+import property from "../../images/services/property.jpg"
+import guarantor from "../../images/services/guarantor.jpg"
 
 import { useStateValue } from '../../StateProvider';
 
@@ -32,12 +35,30 @@ const data = {
         'content': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. React lets you define components as classes or functions. Components defined as classes currently provide more features which are described in detail on this page. To define a React component class, you need to extend React.Component",
         'image':identity,
     },
-    'address': {
-        'title': "Address Verification",
+    'employee': {
+        'title': "Employee Verification",
         'subtitle': 'Why Medical Had Been So Popular Till',
         'content': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. React lets you define components as classes or functions. Components defined as classes currently provide more features which are described in detail on this page. To define a React component class, you need to extend React.Component",
-        'image':address,
-    }
+        'image':employee,
+    },
+	'guarantor': {
+        'title': "Guarantor Verification",
+        'subtitle': 'Why Medical Had Been So Popular Till',
+        'content': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. React lets you define components as classes or functions. Components defined as classes currently provide more features which are described in detail on this page. To define a React component class, you need to extend React.Component",
+        'image':guarantor,
+    },
+	'business': {
+        'title': "Business Verification",
+        'subtitle': 'Why Medical Had Been So Popular Till',
+        'content': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. React lets you define components as classes or functions. Components defined as classes currently provide more features which are described in detail on this page. To define a React component class, you need to extend React.Component",
+        'image':business,
+    },
+	'property': {
+        'title': "Property Verification",
+        'subtitle': 'Why Medical Had Been So Popular Till',
+        'content': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. React lets you define components as classes or functions. Components defined as classes currently provide more features which are described in detail on this page. To define a React component class, you need to extend React.Component",
+        'image':property,
+    },
 }
 
 const Services = () => {
@@ -81,13 +102,16 @@ const Services = () => {
 												<h6>What We do</h6>
 												<li ><Link style={{backgroundColor: service === "kyc" && "#000"}}  to="/services/kyc" className="active"><span>KYC</span><i className="fa fa-angle-right"></i></Link></li>
 												<li ><Link style={{backgroundColor: service === "identity" && "#000"}} to="/services/identity"><span>Identity Verification</span><i className="fa fa-angle-right"></i></Link></li>
-												<li ><Link style={{backgroundColor: service === "address" && "#000"}} to="/services/address"><span>Address Verification</span><i className="fa fa-angle-right"></i></Link></li>										
+												<li ><Link style={{backgroundColor: service === "employee" && "#000"}} to="/services/employee"><span>Employee Verification</span><i className="fa fa-angle-right"></i></Link></li>
+												<li ><Link style={{backgroundColor: service === "guarantor" && "#000"}} to="/services/guarantor"><span>Guarantor Verification</span><i className="fa fa-angle-right"></i></Link></li>
+												<li ><Link style={{backgroundColor: service === "property" && "#000"}} to="/services/property"><span>Property Verification</span><i className="fa fa-angle-right"></i></Link></li>		
+												<li ><Link style={{backgroundColor: service === "business" && "#000"}} to="/services/business"><span>Business Verification</span><i className="fa fa-angle-right"></i></Link></li>										
 											</ul>
 										</div>
 									</aside>
 								</div>
 								
-								<ServiceBreak data={service === 'kyc' ? data.kyc : service === 'identity' ? data.identity : data.address}/>
+								<ServiceBreak data={service === 'kyc' ? data.kyc : service === 'identity' ? data.identity : service === "employee" ? data.employee : service === "business" ? data.business : service === "guarantor" ? data.guarantor : data.property }/>
 
 							</div>
 						</div>

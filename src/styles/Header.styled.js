@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.div`
-  background-color: #000 !important;
+  background-color: ${({ theme }) => theme.colors.hea} !important;
   button {
     background-color: ${({ theme }) => theme.colors.secondary};
     color: #f2f2f2;

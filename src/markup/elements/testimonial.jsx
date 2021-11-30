@@ -59,8 +59,8 @@ class testimonialSection extends Component{
 												<h5 className="name">Leverage On Our API</h5>
 											</div>
 											<div className="testimonial-content">
-												<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-												Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecena ssuspendisse ultrices gravida.</b></p>
+												<p><b>When absolute integrity matters. You should leverage on our APIs to automate validations. 
+												Our methods are simple and  clear and we  are available to help when required.</b></p>
 											</div>
 											
 										

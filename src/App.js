@@ -18,7 +18,7 @@ import GlobalStyles from "./styles/Global.styled";
 import bg1 from "./images/main-banner/bg1.jpg";
 import bg2 from "./images/main-banner/bg2.jpg";
 import bnrImg1 from "./images/banner/img1.jpg";
-import footerBg from "./images/background/footer.jpg";
+import bg7 from "./images/background/bg7.jpg";
 
 function App() {
   const [{ nightMode }] = useStateValue();
@@ -31,7 +31,8 @@ function App() {
       textColor: nightMode ? "#fff" : "#000",
       mbbg: nightMode ? bg2 : bg1,
       abtPg: nightMode ? bg2 : bnrImg1,
-      footer: bg2,
+      hea: nightMode ? "#000" : "#666666",
+      footer: bg7,
     },
     mobile: "768px",
   };
