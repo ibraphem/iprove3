@@ -9,12 +9,12 @@
 
 
 
-.service-menu >li > a.active{
+.service-menu > ul >li > a.active{
     background: #000;
     color: #fff;
 }
 
-.service-menu >li > a > span.serviceText{
+.service-menu > ul > li > a > span.serviceText{
     color: #fff;
 }
 
