@@ -1,4 +1,31 @@
 .sideBar{
-    height: 600px;
     overflow-y: auto;
+    position: sticky;
+    top: 0;
+    overflow-x: hidden;
+    z-index: 1;
+    left: 0;
+}
+
+
+
+.service-menu > ul >li > a.active{
+    background: #000;
+    color: #fff;
+}
+
+.service-menu > ul > li > a > span.serviceText{
+    color: #fff;
+}
+
+
+.service-menu{
+    height: auto;
+    left: -100%;
+    transition: 850ms;
+}
+
+.service-menu.active{
+    left: 0;
+    transition: 350ms;
 }
